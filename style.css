@@ -1,0 +1,104 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+/*Tarjetas*/
+
+.titulo{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-align: center;
+    margin-top:7% ;
+    padding-bottom: 2rem;
+}
+
+
+.container_cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.card{
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20 px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 254, 254,0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+    border-radius: 15px;
+  
+}
+
+.cover_card{
+    width: 100%;
+    height: 80px;
+    border-radius: 14px;
+  
+}
+
+.cover_card img{
+    width: 100%;
+    height: 15rem;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 165px;
+    color:white;
+}
+
+.card p{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.card hr {
+    margin-top: 3px;
+    border: none;
+    height: 0.2px;
+    background:rgb(70, 68, 68);
+}
+
+.footer_card{
+    margin-top: 3px;
+    display: flex;
+    color:white;
+    justify-content: space-between;
+}
+
+.footer_card h3{
+    padding-top: 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/*footer*/
+
+#lista{
+    text-decoration: none; 
+    color:black;
+    display: inline-block;
+
+}
+
