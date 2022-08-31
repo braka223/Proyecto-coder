@@ -59,37 +59,43 @@
           </div>
         </div>
  </nav>
-
-
+ 
  <main>  
 
  <h1 class="titulo">El mejor estilo lo encontras aca</h1>
 
+<!-- Tarjetas de productos -->
+ <div id="container_cards">
 
- <div class="container_cards">
   <div class="card">
+
     <div class="cover_card">
       <img src="imagenes/zapasretro.png" alt="">
     </div>
+
     <h2>Zapatillas</h2>
-    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae dignissimos quam nemo voluptas error, et laboriosam perspiciatis itaque vel. Doloribus ad unde exercitationem dolorem molestias eaque. Doloribus ut provident deleniti!</P>
+    <strong>Precio : $80000</strong>
+    <p id="producto">$</p>
     <hr>
 
     <div class="footer_card">
-      <h3 class="footer">Productos</h3>
+      <h3 class="footer">Jordan Retro 1</h3>
     </div>
-
  
-      <select name="" id="zapatillas">
-       <option value="Retro 1,Valor : $"> Jordan Retro 1</option>
-       <option value="Retro 3,Valor : $">Jordan Retro 3</option>
-       <option value="Retro 4,Valor : $">Jordan Retro 4</option>
-       
-      </select>
-   <p id="texto"></p>   
+ <input id="btn_aumentar" type="submit" value="Sumar otras">
+
+ <input id="btn_quitar" type="submit" value="quitar del carrito">
+
+
+ <ul id="lista">
+  </ul>
+  
+ 
+  </div>
+
   
 
-     </div>
+ 
 
   
   <div class="card">
@@ -97,22 +103,27 @@
       <img src="imagenes/supreme.png" alt="">
     </div>
     <h2>Supreme</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis impedit unde laboriosam obcaecati numquam est delectus sit corrupti, repellendus suscipit dignissimos inventore voluptatum officiis tempore repudiandae necessitatibus nihil, ipsam dolorem!</p>
+    <P>descripcion</P>
     <hr>
 
     <div class="footer_card">
-      <h3 class="footer">Productos</h3>
+      <h3 class="footer">Supreme remeras</h3>
     </div>
-
-
-      <select name="" id="supreme">
-       <option value=" Remera ,Valor : $">Supreme remeras</option>
-       <option value=" Buzo,Valor : $">Supereme buzo</option>
-       <option value=" Jean  ,Valor : $">Supreme jean</option>
-      </select>
-
       <p id="remera_texto"></p>
+    
+      
+      <input class="btn_aumentar" type="submit" value="Comprar">
+      <input class="btn_quitar" type="submit" value="quitar del carrito">
+     <p id="producto">0</p>
+     
+     <div> 
+      <ul id="lista1">
+      </ul>
+      </div>
+     
      </div>
+     
+     
 
 
 
@@ -121,25 +132,26 @@
       <img src="imagenes/nocta.png" alt="">
     </div>
     <h2>Nocta</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde beatae ab, facilis perferendis aliquam fuga ad doloremque deserunt maiores aperiam quisquam molestiae voluptas adipisci sequi voluptatibus veniam, nam ipsam quod.</p>
+    <P>descripcion</P>
     <hr>
 
     <div class="footer_card">
-      <h3 class="footer">Productos</h3>
+      <h3 class="footer">Campera Nocta</h3>
     </div>
 
+    <input class="btn_aumentar" type="submit" value="Comprar">
+    <input class="btn_quitar" type="submit" value="quitar del carrito">
+   <p id="producto2">0</p>
+   
+   <div> 
+    <ul id="lista3">
+    </ul>
+    </div>
+
+ </div> 
+
+
   
-      <select name="" id="nocta">
-       <option value="Campera ,Valor : $">Campera Nocta</option>
-       <option value="Remeras,Valor : $">Remera nocta</option>
-       <option value="Gorra,Valor : $">Gorra Nocta</option>
-      </select>
-
-     <p id="nocta_texto"></p>
-
-     </div>
-
- 
   
 
   <div class="card">
@@ -147,33 +159,58 @@
       <img src="" alt="">
     </div>
     <h2>Campera Retro</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde beatae ab, facilis perferendis aliquam fuga ad doloremque deserunt maiores aperiam quisquam molestiae voluptas adipisci sequi voluptatibus veniam, nam ipsam quod.</p>
+    <P>descripcion</P>
     <hr>
 
     <div class="footer_card">
-      <h3 class="footer">blabla bla</h3>
+      <h3 class="footer">Campera retro 93</h3>
     </div>
     
-    
+    <!--
       <select name="" id="campera_retro">
-       <option value="Campera 93' ,Valor : $">Campera retro 93</option>
+       <option value="Campera 93' ,Valor : $"></option>
        <option value="Campera 90',Valor : $">Campera retro 90</option>
        <option value="Campera 91',Valor : $">Campera retro 91</option>
       </select>
+  -->
+  <input class="btn_aumentar" type="submit" value="Comprar">
+  <input class="btn_quitar" type="submit" value="quitar del carrito">
+ <p id="producto4">0</p>
+  
 
-    <p id="campera_texto"></p>
+ <div> 
+  <ul id="lista4">
+  </ul>
+  </div>
+
+
 
      </div>
 
     
-
  </div>
+
+
+ <div>
+  <form action="" id="form">
+    <input type="email" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="contraseña">
+    <button type="submit">Ingresar</button>
+  </form>
+</div>
+
 
 
 </main>
 
 <footer class="pie">
 
+
+  <div>
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#27309" fill-opacity="1" d="M0,32L60,42.7C120,53,240,75,360,101.3C480,128,600,160,720,160C840,160,960,128,1080,106.7C1200,85,1320,75,1380,69.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+  </div>
 
 
 </footer>

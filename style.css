@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -21,24 +21,26 @@ body{
 }
 
 
-.container_cards{
+#container_cards{
     width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: absolute;
-    top: 65%;
+    position: relative;
+    padding-top: 40%;
+    top: 5%;
     left: 50%;
     transform: translate(-50% , -50%);
 }
 
 .card{
-    width: 300px;
+    width: 250px;
+    height: 500px;
     margin: 10px;
     padding: 20px;
-    box-shadow: 20px 20 px 50px rgba(0,0,0,0.5);
-    background: rgba(255, 254, 254,0.5);
+    box-shadow: 20px 20 px 50px rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.479);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 
@@ -55,32 +57,32 @@ body{
 
 .cover_card img{
     width: 100%;
-    height: 15rem;
+    height: 250%;
 }
 
 .card h2 {
     font-size: 20px;
     font-weight: 400;
-    margin-top: 165px;
-    color:white;
+    margin-top: 117px;
+    color:rgb(0, 0, 0);
 }
 
 .card p{
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.5px;
 }
 
 .card hr {
-    margin-top: 3px;
+    margin-top: 0px;
     border: none;
     height: 0.2px;
     background:rgb(70, 68, 68);
 }
 
 .footer_card{
-    margin-top: 3px;
+    margin-top: 1px;
     display: flex;
     color:white;
     justify-content: space-between;
@@ -93,12 +95,22 @@ body{
 }
 
 
+
 /*footer*/
 
-#lista{
+.wave{ 
+    position:absolute;
+   
+    
+}
+
+#lista li {
     text-decoration: none; 
     color:black;
     display: inline-block;
+    position: relative;
+    margin-top: 50%;
+    padding-top: 80%;
 
 }
 
