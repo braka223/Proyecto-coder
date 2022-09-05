@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 
@@ -12,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
 
  <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -33,7 +36,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                   </li>
-               
+
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="../proyecto1/paginas/zapatillas.html">Zapatillas</a>
                 </li>
@@ -48,9 +51,9 @@
 
                   <li class="nav-item">
                     <a class="nav-link active" href="../proyecto1/paginas/Camperas_Retro.html">Campera Retro</a>
-                  </li> 
+                  </li>
                 </ul>
-                
+
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
@@ -59,71 +62,53 @@
           </div>
         </div>
  </nav>
- 
- <main>  
 
- <h1 class="titulo">El mejor estilo lo encontras aca</h1>
+ <main>
+
+  <strong></strong>
+
+  <h1>Productos</h1>
 
 <!-- Tarjetas de productos -->
  <div id="container_cards">
-
+ 
   <div class="card">
 
     <div class="cover_card">
-      <img src="imagenes/zapasretro.png" alt="">
+      <img src="imagenes/AIRJORDAN1MIDCHICAGO.png" alt="JordansChicago">
     </div>
 
     <h2>Zapatillas</h2>
     <strong>Precio : $80000</strong>
-    <p id="producto">$</p>
+
     <hr>
 
     <div class="footer_card">
       <h3 class="footer">Jordan Retro 1</h3>
     </div>
- 
- <input id="btn_aumentar" type="submit" value="Sumar otras">
 
- <input id="btn_quitar" type="submit" value="quitar del carrito">
+ <input id="btnZapatillas" type="submit" value="Comprar">
 
-
- <ul id="lista">
-  </ul>
-  
- 
   </div>
 
-  
 
- 
-
-  
   <div class="card">
     <div class="cover_card">
       <img src="imagenes/supreme.png" alt="">
     </div>
-    <h2>Supreme</h2>
-    <P>descripcion</P>
+    <h2>Remera</h2>
+    <strong>Precio : $4300</strong>
     <hr>
 
     <div class="footer_card">
       <h3 class="footer">Supreme remeras</h3>
     </div>
-      <p id="remera_texto"></p>
-    
-      
-      <input class="btn_aumentar" type="submit" value="Comprar">
-      <input class="btn_quitar" type="submit" value="quitar del carrito">
-     <p id="producto">0</p>
-     
-     <div> 
-      <ul id="lista1">
-      </ul>
-      </div>
-     
+
+
+    <input id="btnRemera" type="submit" value="Comprar">
+
+
      </div>
-     
-     
 
 
 
@@ -131,71 +116,62 @@
     <div class="cover_card">
       <img src="imagenes/nocta.png" alt="">
     </div>
-    <h2>Nocta</h2>
-    <P>descripcion</P>
+    <h2>Campera</h2>
+    <strong>Precio : $180000</strong>
+
     <hr>
 
     <div class="footer_card">
       <h3 class="footer">Campera Nocta</h3>
     </div>
 
-    <input class="btn_aumentar" type="submit" value="Comprar">
-    <input class="btn_quitar" type="submit" value="quitar del carrito">
-   <p id="producto2">0</p>
-   
-   <div> 
-    <ul id="lista3">
-    </ul>
-    </div>
 
- </div> 
+    <input id="btnCampera" type="submit" value="Comprar">
 
+ </div>
 
-  
-  
 
   <div class="card">
     <div class="cover_card">
-      <img src="" alt="">
+      <img src="imagenes/campera90.png" alt="">
     </div>
     <h2>Campera Retro</h2>
-    <P>descripcion</P>
+    <strong>Precio : $50000</strong>
+
     <hr>
 
     <div class="footer_card">
       <h3 class="footer">Campera retro 93</h3>
     </div>
-    
-    <!--
-      <select name="" id="campera_retro">
-       <option value="Campera 93' ,Valor : $"></option>
-       <option value="Campera 90',Valor : $">Campera retro 90</option>
-       <option value="Campera 91',Valor : $">Campera retro 91</option>
-      </select>
-  -->
-  <input class="btn_aumentar" type="submit" value="Comprar">
-  <input class="btn_quitar" type="submit" value="quitar del carrito">
- <p id="producto4">0</p>
-  
 
- <div> 
-  <ul id="lista4">
-  </ul>
-  </div>
-
+    <input id="btnRetro" type="submit" value="Comprar">
 
 
      </div>
 
-    
+
+    <div>
+<button id="comprar" type="submit">
+  <ul id="listadoZapatillas"></ul>
+  <ul id="listadoRemera"></ul>
+  <ul id="listadoNocta"></ul>
+  <ul id="listadoRetro"></ul>
+     Ir a Pagar</button>
+   </div>
+
+
+
+
+
+
  </div>
 
 
- <div>
-  <form action="" id="form">
-    <input type="email" name="email" placeholder="Email">
-    <input type="password" name="password" placeholder="contraseña">
-    <button type="submit">Ingresar</button>
+<div>
+  <form action="" id="login">
+    <input id="email" type="email" name="email" placeholder="Email">
+    <input id="password" type="password" name="password" placeholder="contraseña">
+    <button id="ingresoPas" type="submit">Ingresar</button>
   </form>
 </div>
 
@@ -215,7 +191,7 @@
 
 </footer>
 
-  
+
 
 
 
@@ -227,8 +203,14 @@
 
 
 
-    <script src="app.js"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+ <script src="app.js"></script>
 </body>
 </html>
